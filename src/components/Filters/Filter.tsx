@@ -40,13 +40,6 @@ export default function Filter() {
     const statusValue = status ?? 'all';
     const genderValue = gender ?? 'all';
 
-    const statusLabel =
-        StatusOptionsData.find((o) => o.value === statusValue)?.label ??
-        'All Status';
-    const genderLabel =
-        GenderOptionsData.find((o) => o.value === genderValue)?.label ??
-        'All Gender';
-
     const clearAll = () => {
         void setStatus(null);
         void setGender(null);
