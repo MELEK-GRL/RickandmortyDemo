@@ -17,7 +17,7 @@ export default function Card({ character }: CardProps) {
                 'flex cursor-pointer flex-row items-center gap-4 rounded-md border px-3 py-3 shadow-md transition-shadow hover:shadow-lg'
             }
         >
-            <div className="h-[110px] w-[80px] rounded-md bg-red-300">
+            <div className="h-[110px] w-[80px] rounded-md">
                 <img
                     src={character.image}
                     alt={character.name}
